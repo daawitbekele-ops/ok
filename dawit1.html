@@ -1,0 +1,242 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stylish Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0d1117;
+            color: #fff;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #00eaff;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(to bottom right, #10141d, #18222f);
+        }
+
+        .hero img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #00eaff;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #00eaff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h2.section-title {
+            font-size: 2rem;
+            color: #00eaff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #161b22;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid #00eaff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #161b22;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+            border: 1px solid #00eaff;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-info h3 {
+            color: #00eaff;
+        }
+
+        .project-info p {
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MyPortfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO WITH PHOTO -->
+    <div class="hero">
+        <img src="image.jpg" alt="My Photo"> <!-- 👈 Replace with your photo -->
+        <h2>Hello, I'm <span>Dawit Bekele</span></h2>
+        <p>I design and develop modern websites that look great and work perfectly.</p>
+    </div>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I’m a passionate web developer with experience in creating beautiful,
+            responsive, and user-friendly websites.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">database</span>
+            <span class="skill">oop</span>
+            <span class="skill">C++</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <img src="img/project1.jpg">
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A landing page built with HTML, CSS, and JS.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project2.jpg">
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>An e-commerce UI with search & cart features.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project3.jpg">
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>A portfolio template with animations.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Email: d6812299@gmail.com</p>
+        <p>Phone: +251993862792</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Your Name — All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
